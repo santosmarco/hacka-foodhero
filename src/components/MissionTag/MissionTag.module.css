@@ -1,0 +1,27 @@
+.MissionTag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.MissionTextWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.DoneIndicator {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-color: #1d3557;
+}
+
+.DoneIndicatorTrue {
+  background-color: #61bd4e;
+  border-color: #61bd4e;
+}

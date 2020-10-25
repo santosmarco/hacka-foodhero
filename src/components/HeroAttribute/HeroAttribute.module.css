@@ -1,0 +1,13 @@
+.HeroAttribute {
+  display: flex;
+  align-items: center;
+}
+
+.HeroAttributeVal {
+  margin-left: 5px;
+}
+
+.HeroAttributeIcon {
+  font-weight: 700;
+  font-size: 1.1rem;
+}

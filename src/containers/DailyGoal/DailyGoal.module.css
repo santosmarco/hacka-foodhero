@@ -1,0 +1,22 @@
+.DailyGoal {
+  padding: 18px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.IndicatorCircle {
+  border-radius: 50%;
+}
+
+.IndicatorOuterCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #a8dadc;
+}
+
+.IndicatorInnerCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #a8dadc;
+}

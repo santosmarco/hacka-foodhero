@@ -1,0 +1,14 @@
+.Indicator {
+  width: 60px;
+}
+
+.IndicatorWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.IndicatorText {
+  margin-left: 10px;
+  line-height: 20px;
+  color: #f1faee;
+}

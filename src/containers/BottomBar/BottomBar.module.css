@@ -1,0 +1,48 @@
+.BottomBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.BottomBar button {
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #457b9d;
+  color: #f1faee;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 0 30px black;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.RegisterMealWrapper {
+  flex-grow: 6;
+  padding-right: 12px;
+}
+
+.SmallBtnsWrapper {
+  flex-grow: 2;
+  padding-right: 12px;
+}
+
+.GoToBattleWrapper {
+  padding-right: 0 !important;
+}
+
+.SmallBtn {
+  background-color: #e63946 !important;
+  position: relative;
+  z-index: 0 !important;
+}
+
+.SmallBtnYellow {
+  background-color: #ffa552 !important;
+}

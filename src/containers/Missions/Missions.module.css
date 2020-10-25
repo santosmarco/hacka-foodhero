@@ -1,0 +1,10 @@
+.Missions {
+  flex-grow: 1;
+  background-color: #457b9d;
+  padding: 18px 25px;
+  color: #f1faee;
+}
+
+.Missions h4 {
+  margin: 0 0 4px;
+}

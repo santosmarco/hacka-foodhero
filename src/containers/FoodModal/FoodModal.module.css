@@ -1,0 +1,36 @@
+.FoodModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(29, 53, 87, 0.8);
+  color: #f1faee;
+  z-index: 300;
+}
+
+.FoodModalContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 25px;
+}
+
+.LoadingMessage {
+  margin-top: 15px;
+}
+
+.FoodIcon {
+  font-size: 8rem;
+  color: rgb(235, 90, 69);
+}
+
+.Divider {
+  width: 100%;
+}
+
+.RewardArea {
+  margin-top: 40px;
+}

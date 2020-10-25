@@ -1,0 +1,17 @@
+.BitBananas {
+  display: flex;
+  align-items: center;
+}
+
+.BitBananasVal {
+  margin-right: 3px;
+}
+
+.BitBananasIcon {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.BitBananasIconYellow {
+  color: #ffa552 !important;
+}

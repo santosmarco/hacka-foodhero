@@ -1,0 +1,15 @@
+.DungeonModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(230, 57, 70, 0.95);
+  color: #f1faee;
+  z-index: 300;
+}
+
+.DungeonModalContent {
+  height: 100%;
+  padding: 0 25px;
+}

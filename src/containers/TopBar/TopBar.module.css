@@ -1,0 +1,17 @@
+.TopBar {
+  background-color: #f1faee;
+  padding: 15px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.PlayerName {
+  font-weight: 700;
+}
+
+.PlayerLevel {
+  font-size: 0.7rem;
+  margin-left: 3px;
+  font-style: italic;
+}
