@@ -8,7 +8,7 @@ const Missions = () => {
 
   return (
     <div className={classes.Missions}>
-      <h4>Suas missões</h4>
+      <strong>Suas missões</strong>
       {missions.map((m) => (
         <MissionTag key={m.text} mission={m} />
       ))}

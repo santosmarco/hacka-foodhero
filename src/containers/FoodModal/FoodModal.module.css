@@ -18,6 +18,12 @@
   padding: 0 25px;
 }
 
+.FoodModalContent h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 12px 0 10px;
+}
+
 .LoadingMessage {
   margin-top: 15px;
 }
@@ -29,6 +35,7 @@
 
 .Divider {
   width: 100%;
+  background-color: white;
 }
 
 .RewardArea {

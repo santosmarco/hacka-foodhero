@@ -1,27 +1,21 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { useDispatch } from "react-redux";
+import Form from "react-bootstrap/Form";
 import { openModal, closeModal } from "../../store/actions";
 
 import classes from "./MealModal.module.css";
 
 const MealModal = (props) => {
-  const [file, setFile] = useState();
   const fileField = useRef();
   const dispatch = useDispatch();
 
   const onFileSelection = (event) => {
-    const file = event.target.files[0];
-    setFile(file);
+    dispatch(openModal("food"));
   };
 
   const onSelfClosure = () => {
     fileField.current.value = null;
-    setFile(null);
     dispatch(closeModal("meal"));
-  };
-
-  const onFileUpload = () => {
-    dispatch(openModal("food"));
   };
 
   return (
@@ -33,7 +27,16 @@ const MealModal = (props) => {
             Você está comendo? Então poste uma foto da sua refeição para ganhar{" "}
             <strong>BitBananas</strong>!
           </p>
-          <input type="file" ref={fileField} onChange={onFileSelection} />
+          <Form.File
+            custom
+            id="custom-file"
+            label="Clique para tirar foto"
+            data-browse="Escolher..."
+            ref={fileField}
+            onChange={onFileSelection}
+            accept="image/*"
+            capture
+          />
           <div className={classes.BtnWrapper}>
             <button
               className={`${classes.MealModalBtn} ${classes.SecondaryBtn}`}
@@ -41,22 +44,9 @@ const MealModal = (props) => {
             >
               Voltar
             </button>
-            <button
-              className={classes.MealModalBtn}
-              disabled={!file}
-              onClick={onFileUpload}
-            >
-              Enviar
-            </button>
           </div>
         </div>
       </div>
-      <img
-        id="foodImg"
-        src={file && URL.createObjectURL(file)}
-        className={classes.PlaceholderImg}
-        alt="Placeholder"
-      />
     </>
   );
 };

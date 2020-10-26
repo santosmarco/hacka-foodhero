@@ -20,16 +20,17 @@ const HeroImg = (props) => {
     case "mage":
       imgSrc = mageSrc;
       break;
-    case "necro":
-      imgSrc = necroSrc;
-      break;
-    case "knight":
-      imgSrc = knightSrc;
-      break;
-    case "zombieKnight":
-      imgSrc = zombieKnightSrc;
-      break;
+    // case "necro":
+    //   imgSrc = necroSrc;
+    //   break;
+    // case "knight":
+    //   imgSrc = knightSrc;
+    //   break;
+    // case "zombieKnight":
+    //   imgSrc = zombieKnightSrc;
+    //   break;
     default:
+      imgSrc = archerSrc;
       break;
   }
 
